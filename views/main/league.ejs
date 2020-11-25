@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/league.css" />
+</head>
+<body>
+    <h1>League Teams</h1>
+    <div class="nav-container">
+        <div class='container-items' id='profile'><a class='container-item' id='profile-box' href="/users/profile">Your Profile</a></div>
+        <div class='container-items' id='roster'><a class='container-item' id='roster-box' href="/rosters">Your Roster</a></div>
+        <div class='container-items' id='league-page'><a class='container-item' id='league-box'>League</a></div>
+        <div class='container-items' id='players'><a class='container-item' id='players-box' href="/rosters/availablePlayers">Filter Players</a></div>
+        <div class='container-items' id='search'><a class='container-item' id='players-box' href="/rosters/search">Search Players</a></div>
+        <div class='container-items' id='rules'><a class='container-item' id='players-box' href="/rosters/league/rules">League Rules</a></div>
+    </div>
+    <div id="teamScroll">
+        <table id="teamTable">
+            <tr id="teamHeader">
+                <th class="id"></th>
+                <th class="teamName">Team</th>
+                <th class="name">Name</th>
+            </tr>
+            <% for(let i = 0; i < user.length; i++) { %>
+                <tr class="playerInfo">
+                    <td><%= i + 1 %></td>
+                    <td><a href="/rosters/league/<%= user[i].id %>" ><%= user[i].teamName %></a> </td>
+                    <td><%= user[i].name %></td>
+                </tr>
+            <% } %>
+           </table>
+    </div>
+    <div class="logout-container">
+        <a class='container-item' id='logout-box' href="/">Log Out</a>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,224 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/f6/ea/00/f6ea000fea4f2e267ffe7ad0d1bc474c.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    background-size: 100% 100%;
+    color: white;
+}
+h1 {
+    background: #0D0106;
+    border: solid #29339B 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3vw;
+    width: 40vw;
+    margin: 2vh auto;
+    padding: 5px;
+}
+#error {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: red;
+    margin-left: 2vw;
+}
+.nav-container {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 7vh 7vh;
+    justify-content: center;
+    font-size: 1.75vw;
+    height: 14vh;
+    width: 75vw;
+    margin: 0 auto;
+    border: 5px solid #29339B;
+    border-radius: 5px;
+    background: #0D0106;
+}
+a {
+    color: #F2F4FF;
+    text-decoration: none;
+}
+.container-items {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container-item {
+    margin: auto;
+}
+
+#profile {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+#roster {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+#league {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+#players {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+#search {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+#rules {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+#logout-box {
+    font-size: 20px;
+    padding: 10px 100px;
+    background-color: #0D0106;
+    border: 2px solid #29339B;
+}
+
+.logout-container {
+    text-align: center;
+}
+
+#profile:hover, #rules:hover, #search:hover, #roster:hover, #league:hover, #players:hover, #logout-box:hover, #signup-box:hover, #login-box:hover {
+    text-decoration: underline;
+    background-color: #29339B;
+    border: 3px solid #0D0106;
+}
+#filterBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #0D0106;
+    border: 5px solid #29339B;
+    border-radius: 5px;
+    width: 75vw;
+    margin: auto;
+    padding: 1.5vh 2px;
+    font: 1.5vw;
+}
+#filterBar #filterButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+form span {
+    margin: auto 15px;
+}
+#searchButton {
+    background-color: #29339B;
+    border: solid #29339B 3px;
+    border-radius: 3px;
+    color: white;
+    margin-left: 15px;
+}
+#playerScroll {
+    height: 60vh;
+    width: 75vw;
+    border: 5px solid #29339B;
+    border-radius: 5px;
+    background: #0D0106;
+    overflow: auto;
+    margin: 2vh auto;
+    scroll-padding: 10px;
+}
+#playerTable {
+    width: 75vw;
+    background: #0D0106;
+    padding: 0px 5px 10px 5px;
+    border-spacing: 0px;
+}
+th {
+    background-color: #0D0106;
+    font-size: 3vw;
+    color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #29339B;
+}
+.playerInfo {
+    margin: 8px 0px;
+}
+td {
+    text-align: center;
+    font-size: 2.25vw;
+    padding: 5px;
+}
+.playerInfo .name {
+    width: 30%;
+}
+.addPlayer {
+    width: 30%
+}
+.addPlayer input{
+    background-color: #29339B;
+    border: solid #29339B 3px;
+    border-radius: 3px;
+    color: white;
+    font: 2.75vw;
+    width: 80%;
+}
+#addButton:hover, #searchButton:hover {
+    background-color: white;
+    border: solid white 3px;
+    color: #29339B;
+}
+
+#players-page {
+    grid-column: 3;
+    grid-row: 1;
+    text-decoration: underline;
+    background-color: #29339B;
+    border: 3px solid #29339B;
+}
+
+#search-page {
+    grid-column: 3;
+    grid-row: 2;
+    text-decoration: underline;
+    background-color: #29339B;
+    border: 3px solid #29339B;
+}
+
+#rules-page {
+    grid-column: 2;
+    grid-row: 2;
+    text-decoration: underline;
+    background-color: #29339B;
+    border: 3px solid #29339B;
+}
+
+ul {
+    font-size: 25px;
+    padding-inline-start: 0px;
+    text-align: justify;
+    border: 3px solid #29339B;
+    background-color: #0D0106;
+    width: 75vw;
+    margin: 0 auto;
+    list-style: none;
+    
+}
+ul li {
+    margin: 2vh 2vw;
+}
